@@ -7,7 +7,7 @@ This works well in conjunction with "Merge Styles into CSS".
 
 Use the included `setup.py` script
 
-  python setup.py
+    python setup.py
 
 or manually copy the files to your Inkscape extensions directory (e.g. `~/.config/inkscape/extensions`).
 
