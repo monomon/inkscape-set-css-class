@@ -37,7 +37,7 @@ def package():
 
     import subprocess
     cmd = ["tar", "--create", "--gzip",
-           "--exclude-vcs", "--exclude", "*.swp",
+           "--exclude-vcs", "--exclude", "*.swp", "--exclude", "*.pyc",
            "--directory", "../", "--verbose",
            "--file", "../inkscape_set_css_class.tar.gz",
            os.path.basename(sys.path[0])
