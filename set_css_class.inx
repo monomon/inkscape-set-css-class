@@ -8,6 +8,7 @@
   <_param name="introduction" type="description">Set a CSS class on the selected elements. Their current inline styles will be removed.</_param>
 
   <param name="name" type="string" _gui-text="CSS class name:">class1</param>
+  <param name="clear_styles" type="boolean" _gui-text="clear inline styling">true</param>
 
   <effect needs-live-preview="false">
     <object-type>all</object-type>

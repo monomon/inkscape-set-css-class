@@ -1,6 +1,8 @@
 # Set CSS class Inkscape extension
 
-This extension sets a CSS class on elements selected in Inkscape, and automatically clears their inline styles.
+This extension sets a CSS class on elements selected in Inkscape.
+It optionally clears their inline styles, in order for the CSS styling to have effect.
+
 This works well in conjunction with "Merge Styles into CSS".
 
 ## Installation
