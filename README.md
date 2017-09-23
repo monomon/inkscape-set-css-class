@@ -11,7 +11,9 @@ Use the included `setup.py` script:
 
     python setup.py install
 
-or manually copy the files to your Inkscape extensions directory (e.g. `~/.config/inkscape/extensions`).
+or manually copy the files to your Inkscape extensions directory.
+
+On Linux this is usually `~/.config/inkscape/extensions` and on Windows it is `%APPDATA%\inkscape\extensions`.
 
 ## Usage
 
