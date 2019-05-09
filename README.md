@@ -13,7 +13,7 @@ Use the included `setup.py` script:
 
 or manually copy the files to your Inkscape extensions directory.
 
-On Linux this is usually `~/.config/inkscape/extensions` and on Windows it is `%APPDATA%\inkscape\extensions`.
+On Unix-like systems (including Linux and Mac OS X) this is usually `~/.config/inkscape/extensions` and on Windows it is `%APPDATA%\inkscape\extensions`.
 
 ## Usage
 
