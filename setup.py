@@ -3,10 +3,10 @@ import sys
 import argparse
 
 def install():
-    if sys.platform.startswith('linux'):
-        dest_path = os.path.join(os.environ['HOME'], '.config', 'inkscape', 'extensions')
-    elif sys.platform.startswith('win'):
+    if sys.platform.startswith('win'):
         dest_path = os.path.join(os.environ['APPDATA'], 'inkscape', 'extensions')
+    else:
+        dest_path = os.path.join(os.environ['HOME'], '.config', 'inkscape', 'extensions')
 
     current_dir = sys.path[0]
 
