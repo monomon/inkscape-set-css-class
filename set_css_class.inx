@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
-  <_name>Set CSS class on elements</_name>
+  <name>Set CSS class on elements</name>
   <id>org.inkscape.stylesheet.set</id>
-  <dependency type="executable" location="extensions">inkex.py</dependency>
   <dependency type="executable" location="extensions">set_css_class.py</dependency>
 
   <_param name="introduction" type="description">Set a CSS class on the selected elements. Their current inline styles will be removed.</_param>
