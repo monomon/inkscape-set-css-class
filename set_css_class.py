@@ -38,7 +38,7 @@ class SetCSSClass(inkex.Effect):
                 current_classes.append(newclass)
 
             if self.options.clear_styles:
-                el.attrib["style"] = ""
+                el.attrib.pop("style", None)
 
             el.attrib["class"] = " ".join(current_classes)
 
