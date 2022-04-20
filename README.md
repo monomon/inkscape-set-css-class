@@ -11,7 +11,7 @@ Use the included `setup.py` script:
 
     python setup.py install
 
-or manually copy the files to your Inkscape extensions directory.
+or manually copy the files `set_css_class.inx` and `set_css_class.py` to your Inkscape extensions directory.
 
 On Unix-like systems (including Linux and Mac OS X) this is usually `~/.config/inkscape/extensions` and on Windows it is `%APPDATA%\inkscape\extensions`.
 
