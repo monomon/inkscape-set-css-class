@@ -18,18 +18,18 @@ import sys
 class SetCSSClass(inkex.Effect):
     def __init__(self):
         inkex.Effect.__init__(self)
-        self.OptionParser.add_option("-n", "--name",
-                                     action="store", type="string",
+        self.arg_parser.add_argument("-n", "--name",
+                                     type=str,
                                      dest="name", default="",
                                      help="Name of css class to apply")
-        self.OptionParser.add_option("-c", "--clear_styles",
-                                     action="store", type="inkbool",
+        self.arg_parser.add_argument("-c", "--clear_styles",
+                                     type=inkex.Boolean,
                                      dest="clear_styles", default=True,
                                      help="Name of css class to apply")
 
     def effect(self):
         newclass = self.options.name
-        elements = self.selected.values()
+        elements = self.svg.selected.values()
 
         for el in elements:
             current_classes = el.attrib.has_key("class") and el.attrib["class"].split() or []
@@ -38,10 +38,10 @@ class SetCSSClass(inkex.Effect):
                 current_classes.append(newclass)
 
             if self.options.clear_styles:
-                el.attrib["style"] = ""
+                el.attrib.pop("style", None)
 
             el.attrib["class"] = " ".join(current_classes)
 
 if __name__ == "__main__":
     e = SetCSSClass()
-    e.affect()
+    e.run()
